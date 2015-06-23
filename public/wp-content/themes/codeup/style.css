@@ -1,0 +1,101 @@
+/*
+Theme Name: WordPYes
+Theme URI: (Your theme url)
+Author: Jenni White
+Author URI: (Your page url)
+Description: This theme is full of awesome. That's all ya need to know!
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: tags, if, for, searching, on, wordpress, if, you, launch, it
+Text Domain: (unique name for your theme, for separation. also used for transalation file)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Page/footer width */
+
+#page, #colophon, #sidebar {
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* Top Navigation */
+
+#sidebar {
+	height: auto;
+	width: 100%;
+	top: 0;
+	margin: 0 0 1em 0;
+	background-color: rgb(216, 242, 237);
+}
+
+#sidebar ul {
+	margin: 0;
+	padding-right: 2em;
+  	text-align: right;
+}
+
+#sidebar li {
+	display: inline-block;
+	margin: 2em 1em;
+}
+
+#sidebar a {
+	color: gray;
+	text-decoration: none;
+}
+
+#sidebar a:active, #sidebar a:hover {
+	border-bottom: 5px solid rgb(250, 202, 114);
+}
+
+/* Main content styling */
+
+#content {
+	padding: 2em 12em 5em 2em;
+	margin-top: 4em;
+	background-color: rgb(225, 227, 228);
+}
+
+/* Fonts */
+
+h1, h2, h3, h4, h5, h6, a {
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-weight: 600;
+}
+
+p {
+	font-family: 'Fauna One', serif;
+	line-height: 1.4;
+}
+
+/* Special, fun styling */
+
+.entry-title {
+	border-bottom: 5px solid white;
+}
+
+/* Footer */
+
+#colophon {
+	width: 100%;
+	margin-top: 8px;
+	background-color: rgb(216, 242, 237);
+}
+
+#colophon ul {
+	margin: 0;
+  	text-align: left;
+}
+
+#colophon li {
+	display: block;
+	margin-top: 1em;
+}
+
+#colophon a {
+	color: gray;
+	text-decoration: none;
+}

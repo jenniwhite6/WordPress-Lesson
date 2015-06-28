@@ -159,4 +159,24 @@
 		}
 	} );
 
+	var plusSign = $('.plus-sign');
+	var sidebar = $('#sidebar');
+	var primaryContent = $('#primary');
+	var sidebarUl = $('#menu-header-menu');
+	var sidebarLi = $('#sidebar li')
+
+	plusSign.click(function() {
+		// plusSign.toggleClass('minus');
+		sidebar.toggleClass('sidebar-move');
+		sidebarUl.toggleClass('sidebar-ul-move');
+		sidebarLi.toggleClass('sidebar-li-move');
+
+		if (sidebar.attr('class') == 'sidebar sidebar-move') {
+			plusSign.html('--');
+
+		} else {
+			plusSign.html('+');
+		}
+	});
+
 } )( jQuery );

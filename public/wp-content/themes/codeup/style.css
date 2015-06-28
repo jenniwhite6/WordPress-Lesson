@@ -14,88 +14,163 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* Page/footer width */
+/***** Body styling ****/
 
-#page, #colophon, #sidebar {
+body {
+	background-color: #2BE3A4;
+}
+
+/**** Page/footer width ****/
+
+#page, #sidebar {
 	max-width: 1000px;
 	margin: auto;
 }
 
-/* Top Navigation */
+/**** Fonts ****/
+
+h1, h2, h3, h4, h5, h6 {
+	/*font-family: 'Source Sans Pro', sans-serif; */
+	font-family: 'Fauna One', serif;
+	font-weight: 600;
+}
+
+p, a {
+	/*font-family: 'Fauna One', serif;*/
+	font-family: 'Source Sans Pro', sans-serif; 
+	line-height: 1.4;
+	font-size: 16px;
+}
+
+blockquote {
+	border-left: 5px solid red;
+}
+
+blockquote p {
+	font-size: 24px !important;
+	padding-left: 10px;	
+	font-style: italic;
+}
+
+.entry-title {
+	font-size: 4em;
+	margin-bottom: 5px;
+}
+
+/**** Top Navigation ****/
 
 #sidebar {
-	height: auto;
+	height: 110px;
 	width: 100%;
+	position: fixed;
 	top: 0;
-	margin: 0 0 1em 0;
-	background-color: rgb(216, 242, 237);
+	background-color: rgba(255, 245, 142, 0.82);
+}
+
+.page-id-8 #sidebar {
+	background-color: rgba(43, 227, 164, 0.82);
+}
+
+.page-id-8 {
+	background-color: white;
 }
 
 #sidebar ul {
 	margin: 0;
 	padding-right: 2em;
-  	text-align: right;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	text-align: right;
+	line-height: 1.7;
 }
 
 #sidebar li {
 	display: inline-block;
-	margin: 2em 1em;
+	margin-right: 1em;
+	padding: 10px;
 }
 
 #sidebar a {
-	color: gray;
+	color: rgb(86, 84, 84);
 	text-decoration: none;
 }
 
 #sidebar a:active, #sidebar a:hover {
-	border-bottom: 5px solid rgb(250, 202, 114);
+	border-bottom: 5px solid red;
 }
 
-/* Main content styling */
+/**** Main content styling ****/
 
 #content {
-	padding: 2em 12em 5em 2em;
+	padding: 4em 5em;
 	margin-top: 4em;
-	background-color: rgb(225, 227, 228);
 }
 
-/* Fonts */
-
-h1, h2, h3, h4, h5, h6, a {
-	font-family: 'Source Sans Pro', sans-serif; 
-	font-weight: 600;
-}
-
-p {
-	font-family: 'Fauna One', serif;
-	line-height: 1.4;
-}
-
-/* Special, fun styling */
-
-.entry-title {
-	border-bottom: 5px solid white;
-}
-
-/* Footer */
+/**** Footer ****/
 
 #colophon {
 	width: 100%;
-	margin-top: 8px;
-	background-color: rgb(216, 242, 237);
+	background-color: rgb(160, 130, 223);
+	padding-bottom: 20px;
 }
 
 #colophon ul {
 	margin: 0;
+	margin-left: 20px;
+	padding: 20px;
+	padding-bottom: 0;
   	text-align: left;
+}
+
+#colophon p {
+	margin-left: 40px;
+	color: white;
+
 }
 
 #colophon li {
 	display: block;
-	margin-top: 1em;
+	margin-top: 10px;
 }
 
 #colophon a {
-	color: gray;
+	color: white;
 	text-decoration: none;
 }
+
+#colophon a:active, #colophon a:hover {
+	border-bottom: 5px solid red;
+}
+
+/**** Click function styling ****/
+
+.plus-sign {
+	font-size: 3em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px 10px;
+	color: rgb(84, 86, 216);
+	cursor: pointer;
+}
+
+.sidebar-move {
+	width: 170px !important;
+	left: 0;
+	height: 100% !important;
+}
+
+.sidebar-ul-move {
+	display: block !important;
+	padding: 60px 0px !important;
+	margin: 0 !important;
+	text-align: left !important;
+}
+
+.sidebar-li-move {
+	padding: 5px !important;
+	margin-left: 5px;
+}
+
+

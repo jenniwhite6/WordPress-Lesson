@@ -22,7 +22,6 @@
 				 */
 				do_action( 'twentyfifteen_credits' );
 			?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfifteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfifteen' ), 'WordPress' ); ?></a>
 			<div class='footer-menu'>
 				<?php if ( has_nav_menu( 'secondary' ) ) : ?>
 					<nav id="footer-navigation" class="footer-navigation" role="navigation">
@@ -30,11 +29,12 @@
 							// Footer navigation menu.
 							wp_nav_menu( array(
 								'menu_class'     => 'nav-menu',
-								'theme_location' => 'secondary',
+								'theme_location' => 'secondary',							
 							) );
 						?>
 					</nav><!-- .footer-navigation -->
 				<?php endif; ?>
+				<p>&#169; 2015 Jenni White</p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
